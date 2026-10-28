@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracotta: #C65D3B;
+  --color-deep-slate: #2F455A;
+  --color-dusty-blue: #58758A;
+  --color-slate-blue: #9DB2BF;
+  --color-warm-beige: #EFE6DB;
+  --color-main-bg: #FAF7F2;
+  --color-surface-white: #FFFFFF;
+  --color-charcoal: #2A2725;
+  --color-muted-green: #6F8171;
+
+  --font-sans: "Manrope", sans-serif;
+
+  --radius-btn: 8px;
+  --radius-input: 8px;
+  --radius-card: 10px;
+  --radius-container: 12px;
+}
+
+@layer base {
+  body {
+    background-color: #FAF7F2;
+    color: #2A2725;
+    font-family: "Manrope", sans-serif;
+  }
+
+  /* Custom subtle focus states */
+  input:focus, select:focus, textarea:focus {
+    outline: 2px solid #C65D3B;
+    outline-offset: 1px;
+  }
+}
+
+/* Custom fine-grained UI styles that look clean and editorial */
+.border-subtle {
+  border: 1px solid rgba(47, 69, 90, 0.12);
+}
+
+.bg-warm-texture {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(rgba(42, 39, 37, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}

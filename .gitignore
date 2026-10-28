@@ -1,0 +1,22 @@
+node_modules/
+**/node_modules/
+
+dist/
+**/dist/
+
+.env
+.env.*
+!.env.example
+
+backend/uploads/
+
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+*.log
+npm-debug.log*
+
+# Local backup archives
+*.zip
